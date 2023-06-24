@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+        </style>
+        <script>
+            // function defination
+            function myFunction(x,y){ // formal argument
+                // function body
+
+                // function may return something
+                return x+y;
+
+            }
+
+            // function calling/invoking           invoke/call
+            let z = myFunction(10,20); // actual argument
+            var a = myFunction(50,10);
+            // my function is user defined function
+            console.log(z);
+
+            // alert is a pre defined function
+           // alert(a);
+
+
+            let b = myFunction(60,myFunction(10,20));
+           // alert(b);
+
+           var students = ["Javed",'Rahul',"Aman",'sazid',"Rohan"];
+
+           console.log("Hello "+students[2]+', How are you');
+           //alert("Hello "+students[4]+" How are you");
+
+           // defination
+           function greet(m){
+            // function body
+            console.log("Hello  "+m+", How are you");
+
+           }
+
+           // funtion invoke/call
+           //greet(students[0]);
+
+           /*
+           for(initilization;condition;increment/decrement){
+
+           }
+           */
+
+           for(var i=0;i<=4;i++){
+            greet(students[i]);
+           }
+
+
+
+           function greet2(s){
+            for(var i=0;i<=4;i++){
+            console.log(" Hii  "+s[i]+", How are you");
+           }
+           }
+
+           greet2(students);
+        </script>
+    </head>
+    <body>
+
+        
+        <script>
+
+        </script>
+    </body>
+</html>
